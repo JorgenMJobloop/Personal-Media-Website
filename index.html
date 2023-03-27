@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="reduceMotions.js" async></script>
+    <script src="index.js" defer></script>
+    <title>Media</title>
+  </head>
+  <body>
+    <header>
+      <nav></nav>
+      <div id="headers">
+        <h1>Media I enjoy during the scandinavian winter</h1>
+        <h4>
+          Click on the images below to display information about each media.
+        </h4>
+        <p id="mobile-note">
+          For mobile users, the site can best be viewed in fullscreen
+          horizontally.
+        </p>
+      </div>
+    </header>
+    <!--Using class for styling purposes, and id for JavaScript interactions-->
+    <section class="main-section">
+      <div class="media-class">
+        <button id="remove-text" onclick="removeText()">
+          Remove all text.
+        </button>
+        <h3 class="media-header">Twin Peaks</h3>
+        <img
+          class="media-images twinpeaks"
+          src="https://preview.redd.it/8frlti8610j91.png?width=640&crop=smart&auto=webp&s=8a206a4bb1b0535bb98342038cf04c4146f63791"
+          alt="Twin Peaks is an American television series written and directed by David Lynch and Mark Frost, starring Kyle Maclachlan, Sheryl Lee and Ray Wise"
+          onclick="displayText(1)"
+        />
+
+        <div class="text-box">
+          <p id="text-el-1"></p>
+        </div>
+        <div class="media-class">
+          <h3 class="media-descriptions">Arrested Development</h3>
+          <img
+            class="media-images arrested"
+            src="https://e1.pngegg.com/pngimages/373/900/png-clipart-arrested-development-serie-folders-logo-w-icon.png"
+            alt="Arrested Development is an American television series created by Mitchell Hurwitz starring Jason Bateman, Micheal Cera & Will Arnett"
+            onclick="displayText(2)"
+          />
+
+          <div class="text-box">
+            <p id="text-el-2"></p>
+          </div>
+        </div>
+        <div class="media-class">
+          <h3 class="media-descriptions">Neon Genesis Evangelion</h3>
+          <img
+            class="media-images NGE"
+            src="https://m.media-amazon.com/images/M/MV5BMGRlZTIwZjQtZWU2NC00MDYzLTg0YWUtOGY3YjU4NTUzOTU1XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg"
+            alt="Neon Genesis Evangelion is a Japanese animated television series created and directed by Hideaki Ano, it follows the dark story of mecha pilots Shinji Ikari, Rei Ayanami and Asuka Langley as the world is thrown into an imminent apocalypse."
+            onclick="displayText(3)"
+          />
+
+          <div class="text-box">
+            <p id="text-el-3"></p>
+          </div>
+        </div>
+        <div class="media-class">
+          <h3 class="media-descriptions">Tekken Video Game Series</h3>
+          <img
+            class="media-images tekken"
+            src="https://upload.wikimedia.org/wikipedia/en/7/79/Tekken_series_logo_as_of_2012.png"
+            alt="Tekken is a Japanese video game & media series created by Seiichi Ishii & Katsuhiro Harada, it is a fighting game build and developed by Bandai Namco Japan."
+            onclick="displayText(4)"
+          />
+
+          <div class="text-box">
+            <p id="text-el-4"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Using the <section> tag to easier visualize the internal structure of the document for readability purposes-->
+    <footer>
+      <div id="footer">
+        <h3 class="footer-head">About</h3>
+        <p>Copyrights</p>
+        <small
+          >This site is a non-profit website used for learning purposes.</small
+        >
+        <p id="legal">
+          <a href="https://www.sho.com/twin-peaks">Showtime</a>
+          <a href="https://en.wikipedia.org/wiki/David_Lynch">David Lynch</a>
+          <a href="https://en.wikipedia.org/wiki/Mark_Frost">Mark Frost</a>
+          <a href="https://www.fox.com/">Fox Televsion</a>
+          <a href="https://netflix.com/">Netflix</a>
+          <a href="https://en.wikipedia.org/wiki/Hideaki_Anno">Hideaki Ano</a>
+          <a href="https://en.wikipedia.org/wiki/Gainax">Studio Gainax</a>
+          <a href="https://en.wikipedia.org/wiki/Khara_(studio)"
+            >Studio Khara</a
+          >
+          <a href="https://en.bandainamcoent.eu/">Bandai Namco</a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
