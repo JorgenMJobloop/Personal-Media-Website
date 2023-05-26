@@ -11,4 +11,4 @@ const handleReduceMotionChanged = () => {
   handleReduceMotionChanged();
 };
 
-console.log("Running media query failsafe script asynchronously");
+console.log("Running media query failsafe script");
